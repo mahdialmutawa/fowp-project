@@ -356,10 +356,10 @@ div.social_media
 }
 
 #last-prod {
-    opacity: 30% !important;
+    opacity: 30%;
 }
 
-.nextButton{
+#LS_nextButton , #LS_backButton{
     background-color: transparent;
     border: none; 
     box-shadow: 3px 1px 16px grey;
@@ -369,8 +369,15 @@ div.social_media
     cursor: pointer;
 }
 
-.nextButton > img {
+
+#LS_nextButton > img, #LS_backButton > img {
     margin-right: -7.5px;
     margin-top: -2.5px;
     padding-bottom: 40px;
+}
+
+#LS_backButton {
+    visibility: hidden;
+    margin-left: -60px;
+    margin-right: -60px;
 }
