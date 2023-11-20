@@ -1,7 +1,9 @@
 //This file written by [@Dev-K0]
 const last_Seen = document.getElementById("LS_nextButton");
 const last_seen_section = document.getElementById("lastSeen");
+const last_Seen_Back = document.getElementById("LS_backButton");
 let startIndex = 0;
+//static elements used to simulate data returned from DB
 let lastElements = [
     {
         merchant: "العلواني لقطع السيارات",
@@ -27,6 +29,24 @@ let lastElements = [
         price: 63.00,
         old_price: 66.16
     },
+    // {
+    //     merchant: "5العلواني لقطع السيارات",
+    //     product_name: "ذراع دريكسون داخلي لفورد برونكو ",
+    //     price: 63.00,
+    //     old_price: 66.16
+    // },
+    // {
+    //     merchant: "6العلواني لقطع السيارات",
+    //     product_name: "ذراع دريكسون داخلي لفورد برونكو ",
+    //     price: 63.00,
+    //     old_price: 66.16
+    // },
+    // {
+    //     merchant: "7العلواني لقطع السيارات",
+    //     product_name: "ذراع دريكسون داخلي لفورد برونكو ",
+    //     price: 63.00,
+    //     old_price: 66.16
+    // },
 ];
 
 const create_prod = (merchant, pname,price,old_price)=>{
@@ -81,24 +101,14 @@ const create_prod = (merchant, pname,price,old_price)=>{
     return linking;
 }
 
-last_Seen.addEventListener("click",()=>{
-    for(let child of last_seen_section.children){
-        if(child.firstChild.className === "products-inline-style"){
-            if(child.id !== "last-prod"){
-                child.style.display = "none";
-                continue;
-            }
-            child.style.opacity = "100%";
-            child.id = "";
-        }
-    }
-    addLastSeenElements();
-});
+
 
 const addLastSeenElements = ()=>{
+    const counter = last_seen_section.children[last_seen_section.children.length-2].id === "first" ? 2 : 3;
     if(startIndex < lastElements.length){
-        for(let i= 0; i < 3; i++, startIndex++){
+        for(let i= 0; i < counter; i++, startIndex++){
             if(startIndex >= lastElements.length){
+                last_Seen.style.visibility = "hidden";
                 break;
             }
             const elem = create_prod(
@@ -107,10 +117,11 @@ const addLastSeenElements = ()=>{
                 lastElements[startIndex].price,
                 lastElements[startIndex].old_price
             );
-            if(i == 2){
+            if(i == counter-1){
+                elem.id = "last";
                 elem.style.opacity = "30%";
             }
-            last_seen_section.insertBefore(elem, last_Seen);
+            last_seen_section.append(elem, last_Seen);
         }
     } else {
         last_Seen.style.visibility = "hidden";
@@ -118,7 +129,81 @@ const addLastSeenElements = ()=>{
 };
 
 const init = (()=>{
+    if(lastElements.length > 2){
+        last_Seen.style.visibility = "visible";
+    }
     addLastSeenElements();
 });
 
 init();
+
+last_Seen.addEventListener("click", ()=>{
+    for(var child of last_seen_section.children){
+        if(child.firstChild.className === "products-inline-style" && child.id !== "last"){
+            child.style.display = "none";
+        }
+    }
+    if(last_seen_section.children[last_seen_section.children.length-2].id !== "LS_backButton"){
+        last_seen_section.children[last_seen_section.children.length-2].id = "first";
+        last_seen_section.children[last_seen_section.children.length-2].style.opacity = "100%";
+    }
+    if(last_Seen_Back.style.visibility === "hidden" ||
+        last_Seen_Back.style.visibility === ""){
+        last_Seen_Back.style.visibility = "visible";
+    }
+    addLastSeenElements();
+});
+
+
+//reverse next operation 
+/**
+ * @Not_Finished_Yet
+ * @Fuck_Front_END_Tasks
+ */
+
+// const addLastSeenElementsReversed = ()=>{
+//     // const counter = 
+//     if(startIndex === lastElements.length){
+//         startIndex--;
+//     }
+//     if(startIndex >= 0){
+//         for(let i =0 ; i < 3; i++, startIndex--){
+//             if(startIndex < 0){
+//                 last_Seen_Back.style.visibility = "hidden";
+//                 startIndex = 0;
+//                 break;
+//             }
+//             const elem = create_prod(
+//                 lastElements[startIndex].merchant,
+//                 lastElements[startIndex].product_name,
+//                 lastElements[startIndex].price,
+//                 lastElements[startIndex].old_price
+//             );
+//             if(i == 2){
+//                 elem.id = "last";
+//                 elem.style.opacity = "30%";
+//             }
+//             if(i==0){
+//                 elem.id = "first";
+//             }
+//             last_seen_section.insertBefore(elem, last_Seen);
+//         }
+//     } else {
+//         last_Seen_Back.style.visibility = "hidden";
+//         startIndex = 0;
+//     }
+// };
+
+// last_Seen_Back.addEventListener("click", ()=>{
+//     let first;
+//     for(var child of last_seen_section.children){
+//         if(child.firstChild.className === "products-inline-style"){
+//             child.style.display = "none";
+//         }
+//     }
+//     if(last_Seen.style.visibility === "hidden" ||
+//         last_Seen.style.visibility === ""){
+//         last_Seen.style.visibility = "visible";
+//     }
+//    addLastSeenElementsReversed();
+// });

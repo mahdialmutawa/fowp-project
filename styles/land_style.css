@@ -360,6 +360,7 @@ div.social_media
 }
 
 #LS_nextButton , #LS_backButton{
+    visibility: hidden;
     background-color: transparent;
     border: none; 
     box-shadow: 3px 1px 16px grey;
@@ -377,7 +378,6 @@ div.social_media
 }
 
 #LS_backButton {
-    visibility: hidden;
     margin-left: -60px;
     margin-right: -60px;
 }
