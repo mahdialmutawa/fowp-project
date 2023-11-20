@@ -1,18 +1,14 @@
 <!DOCTYPE html>
-
-<html lang="ar" dir="rtl">
+<html dir="rtl">
     <head>
-        <link rel="stylesheet" href="/styles/land_style.css">
-        <title>
-            Landing page
-        </title>
-        
+        <title>Legainaha</title>
+        <link rel="stylesheet" href="../../styles/land_style.css">
+        <link rel="stylesheet" href="../../styles/customer-land.css">
     </head>
-
     <body>
         <header dir="ltr">
             <div class="Legainaha_signature">
-                <img src="assets/images/Legainaha's logo.svg">
+                <img src="../../assets/images/Legainaha's logo.svg">
                 <a href="index.html">Legainaha</a>
             </div>
             <div class="search_section">
@@ -23,18 +19,9 @@
                 </select>
                 <input type="text" size="49" placeholder="ماهي القطعة التي تبحث عنها؟" style="font-size: 14pt; text-align: right; padding: 0px 12px 0px 0px;">
             </div>
-            <nav>
-                <div class="navigation_links">
-                    <ul>
-                        <li>
-                            <a href="#">تسجيل الدخول</a>
-                        </li>
-                        <li>
-                            <a href="">السلة</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+
+            <a href="" target="_self" id="user-profile"><h6>Username</h6></a>
+            <a href="" target="_self" id="cart"><h6>cart</h6></a>
         </header>
 
         <h1 id="page-title">أهلاً بك في لِقيناها!</h1>
@@ -54,6 +41,116 @@
             <a href="" target="_blank"><div class="white-circle"><img src="/assets/sections/oils.png" alt="offers-section"> <h4>الزيوت</h4></div></a>
             <a href="" target="_blank"><div class="white-circle"><img src="/assets/sections/cons-parts.png" alt="offers-section"> <h4>القطع الإستهلاكية</h4></div></a>
             <a href="" target="_blank"><div class="white-circle"><img src="/assets/sections/elec-parts.png" alt="offers-section"> <h4>القطع الكهربائية</h4></div></a>
+        </div>
+
+        <div class="app-sections">
+            <div class="sections-title"><h2>الطلبات</h2></div>
+            <span class="right-subtitle"><h4>الطلبات الحالية</h4></span>
+            <div id="current-orders">
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+            </div>
+
+            <span class="right-subtitle"><h4>الطلبات السابقة</h4></span>
+            <div id="prev-orders">
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="order-card">
+                        <div class="circle">
+                            <h6>عدة متاجر</h6>
+                        </div>
+                        
+                        <h5 class="bill-number">
+                            Bill Number #SF42D6352
+                        </h5>
+                        
+                        <h5 class="bill-total">
+                            217.35 ر.س
+                        </h5>
+                    </div>
+                </a>
+            </div>       
         </div>
 
         <footer>
@@ -138,6 +235,5 @@
                 </div>
             </div>
         </footer>
-        <script src="./scripts/land_script.js"></script>
     </body>
 </html>
