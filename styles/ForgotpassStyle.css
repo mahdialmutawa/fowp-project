@@ -52,9 +52,8 @@ header
 }
 /*End of header style*/ 
 
-/*Start of body style*/ 
-
-body 
+/*Start of body style*/
+body
 {
     margin: 0;
     padding: 0;
@@ -68,32 +67,22 @@ body
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 140vh;
+    height: 100vh;
 }
 
-.Login-box
+.forgot-password-box 
 {
     background-color: #ffffff;
     width: 25%;
-    height: 120vh;
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    margin: 490px 0px 160px;
+    margin-top: -90px;
     text-align: center;
 }
 
-.Login-box h1 
+.forgot-password-box input[type="email"] 
 {
-   font-size: 30px;
-   margin: 10px;
-   color: #307095;
-   position: relative;
-}
-
-.inputF
-{
-    
     height: 7vh;
     background: #eaeaea;
     margin: 20px 0;
@@ -103,8 +92,22 @@ body
     max-height: 65px;
     transition: max-height 0.5s;
     overflow: hidden;
+} 
 
+.forgot-password-box input[type="password"] 
+{
+    height: 7vh;
+    background: #eaeaea;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    display: none;
 }
+
 
 input
 {
@@ -116,43 +119,85 @@ input
  padding: 18px 15x;
 }
 
-form a 
+.resend-link 
 {
- text-align: right;
- font-size: 13px;
- text-decoration: underline;
- color: #307095;
- 
+    display: block;
+    text-align: right;
+    margin-top: -20px;
+    margin-right: 8px;
+    color: #204F6A;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.buttonF
+.resend-link a 
 {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    color: #204F6A;
+    text-decoration: none;
 }
 
-.buttonF button
+.resend-link a:hover 
 {
- flex-basis: 46%;
- background: #307095;
- color: #fff;
- height: 40px;
- border-radius: 8px;
- border: 0;
- outline: 0;
- cursor: pointer;
- transition: background 1s;
-}
-
-.buttonF button.Transition
-{
-    background: #eaeaea;
-    color: #307095;
+    text-decoration: underline;
 }
 
 
-/*End of body style*/ 
+.verification-code-inputs 
+{
+    margin-bottom: 20px;
+}
+
+.verification-code-inputs input[type="text"] 
+{
+
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+    
+}
+
+.verification-code-inputs input[type="text"]:focus 
+{
+    border-color: #204F6A;
+    box-shadow: 0px 0px 5px 0px rgba(32, 79, 106, 0.5);
+}
+
+.forgot-password-box button 
+{
+    background-color: #204F6A;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.forgot-password-box div.Change
+{
+    display: none;
+}
+
+.forgot-password-box button:hover 
+{
+    background-color: #1A425B;
+}
+
+h2 {
+    color: #204F6A;
+    font-weight: bold;
+    text-align: right;
+}
+
+/*End of body style*/
 
 /*Start of fotter style*/ 
 footer
