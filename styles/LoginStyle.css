@@ -1,3 +1,4 @@
+/*Start of header style*/ 
 @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
 *{
     font-family: 'Share', sans-serif;
@@ -49,15 +50,111 @@ header
   border-radius: 10px;
   width: 100%
 }
+/*End of header style*/ 
 
+/*Start of body style*/ 
 
-@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
-*{
-    font-family: 'Share', sans-serif;
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
 }
 
-/* This is the footer's section */
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 140vh;
+}
 
+.Login-box
+{
+    background-color: #ffffff;
+    width: 25%;
+    height: 120vh;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    margin: 490px 0px 160px;
+    text-align: center;
+}
+
+.Login-box h1 
+{
+   font-size: 30px;
+   margin: 10px;
+   color: #307095;
+   position: relative;
+}
+
+.inputF
+{
+    
+    height: 7vh;
+    background: #eaeaea;
+    margin: 20px 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+
+}
+
+input
+{
+ 
+ width: 100%;
+ background: transparent;
+ border: 0;
+ outline: 0;
+ padding: 18px 15x;
+}
+
+form a 
+{
+ text-align: right;
+ font-size: 13px;
+ text-decoration: underline;
+ color: #307095;
+ 
+}
+
+.buttonF
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttonF button
+{
+ flex-basis: 46%;
+ background: #307095;
+ color: #fff;
+ height: 40px;
+ border-radius: 8px;
+ border: 0;
+ outline: 0;
+ cursor: pointer;
+ transition: background 1s;
+}
+
+.buttonF button.Transition
+{
+    background: #eaeaea;
+    color: #307095;
+}
+
+
+/*End of body style*/ 
+
+/*Start of fotter style*/ 
 footer
 {
     background-color: #E6E6EF ;
@@ -109,96 +206,4 @@ div.social_media
 {
     margin: 20px 40px;
 }
-
-/* This is body section */
-
-#page-title
-{
-    color: #204F6A;
-    font-weight: bolder;
-    margin: 40px 6%;
-}
-
-h2 
-{
-    color: #204F6A;
-    font-weight: bolder;
-    text-align: right;
-}
-body 
-{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
-}
-
-.container 
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.login-box 
-{
-    background-color: #ffffff;
-    width: 25%;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-    margin-top: -90px;
-    text-align: center;
-}
-
-.login-box input[type="text"], 
-.login-box input[type="password"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.login-box button 
-{
-    background-color: #204F6A;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 20px;
-    width: 80%;
-    font-weight: bolder;
-}
-
-.login-box button:hover 
-{
-    background-color: #204F6A;
-}
-
-.forgot-password 
-{
-    
-    text-decoration: underline;
-    cursor: pointer;
-    color: #204F6A;
-    font-weight: bolder;
-    margin-left: 180px;
-}
-
-.sign-up
-{
-   
-    text-decoration: underline;
-    cursor: pointer;
-    color: #204F6A;
-    font-weight: bolder;
-    margin-top: 5px;
-}
-
+/*End of fotter style*/
