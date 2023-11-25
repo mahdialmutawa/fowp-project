@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+*{
+    font-family: 'Share', sans-serif;
+}
+
+#main
+{
+    margin: 0px 400px;
+}
+
+#back
+{
+    margin-top: 15px;
+    color: #204F6A;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border-width: 0px;
+    border-color: white;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#h1i
+{
+    margin-right: 280px;
+    color: #204F6A;
+}
+
+button
+{
+    border: 0px;
+    background-color: white;
+}
+
+#pic1
+{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+#pic2
+{
+    width: 400px;
+    height: 400px;
+    margin-top: 100px;
+    margin-right: 40px;
+}
+
+p
+{
+    font-size: 40px;
+    color: #204F6A;
+    margin-top: -1px;
+}
