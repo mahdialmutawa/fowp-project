@@ -169,29 +169,37 @@
             
             EF.style.maxHeight = "0";
             Vp.style.maxHeight = "0";
-            
-            function validateForm(){
-                const p1 = document.getElementById("pass").textContent;
-                const p2 = document.getElementById("vpass").textContent;
-                if (p1 === p2) 
-                {
-                    //update user password in db
-
-                    //then do this
-                    window.open('Login.html', '_blank'); 
+        
+            function validateForm()
+             {
+                const p1 = document.getElementById("pass").value;
+                const p2 = document.getElementById("vpass").value;
+                
+                if (p1 === p2) {
+                    // Update user password in the database
+        
+                    // Redirect to Login.html
+                    window.location.href = 'Login.html';
                 }
             }
             
-            si.onclick = function() 
+            function OpenSignUp() 
             {
                 EF.style.maxHeight = "60px";
                 Vp.style.maxHeight = "60px";
                 Fp.style.display = "none";
                 si.classList.remove("Transition");
                 li.classList.add("Transition");
+                
+                si.onclick = function(event) 
+                {
+                    event.preventDefault();
+                    validateForm();
+                };
             }
             
-            li.onclick = function() {
+            function OpenLogin() 
+            {
                 EF.style.maxHeight = "0";
                 Vp.style.maxHeight = "0";
                 Fp.style.display = "block";
@@ -199,6 +207,21 @@
                 si.classList.add("Transition");
                 li.classList.remove("Transition");
             }
+            
+            si.addEventListener("click", function(event) 
+            {
+                
+                    event.preventDefault();
+                    OpenSignUp();
+                
+            });
+        
+            li.addEventListener("click", function(event) 
+            {
+                event.preventDefault();
+                OpenLogin();
+            });
+
         </script>
         
     </body>
