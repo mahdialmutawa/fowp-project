@@ -34,20 +34,14 @@
         <div class="container  ">
             <div class = "Login-box">
                 <h1>اهلا بك في لِقيناها</h1>
-                <form onsubmit="validateForm();" id="myform">
+                <form id="myform">
                     <div class = "Inp">
                         <div class = "inputF" id="username">
-                            <input type="text" placeholder="أسم المستخدم" required>
+                            <input type="text" placeholder="أسم المستخدم" required id = "nameInput">
                         </div>
                         <div class = "Inp">
-                            <div class = "inputF" id = "EmailF">
-                                <input type="email" placeholder="البريد الالكتروني" required>
-                            </div>
                         <div class = "inputF">
-                            <input type="password" placeholder="كلمة المرور" required id="pass">
-                        </div> 
-                        <div class = "inputF" id = "PassVerify">
-                            <input type="password" placeholder="تأكيد كلمة المرور" required id="vpass">
+                            <input type="password" placeholder="كلمة المرور" required id="passwordInput">
                         </div> 
 
                         <div class="forgot-password">
@@ -63,7 +57,7 @@
                         <button type = "submit" id = "si">
                         انشاء حساب 
                         </button>
-                        <button type = "submit" id = "li" class="Transition">
+                        <button type = "submit" id = "li">
                             تسجيل دخول 
                         </button>
                     </div>
@@ -160,70 +154,37 @@
 
         
         <script>
-            var si = document.getElementById("si");
-            var li = document.getElementById("li");
-            var EF = document.getElementById("EmailF"); 
-            var Vp = document.getElementById("PassVerify"); 
-            var Fp = document.getElementById("ForgotPass");
-            const form = document.getElementById("myform");
+            var registerB = document.getElementById("si");
+            var LoginB = document.getElementById("li");
+
             
-            EF.style.maxHeight = "0";
-            Vp.style.maxHeight = "0";
-        
-            function validateForm()
-             {
-                const p1 = document.getElementById("pass").value;
-                const p2 = document.getElementById("vpass").value;
-                
-                if (p1 === p2) {
-                    // Update user password in the database
-        
-                    // Redirect to Login.html
-                    window.location.href = 'Login.html';
-                }
-            }
-            
-            function OpenSignUp() 
+            LoginB.onclick= function()
             {
-                EF.style.maxHeight = "60px";
-                Vp.style.maxHeight = "60px";
-                Fp.style.display = "none";
-                si.classList.remove("Transition");
-                li.classList.add("Transition");
-                
-                si.onclick = function(event) 
+                var password1 = document.getElementById("passwordInput").value;
+                var name = document.getElementById("nameInput").value;
+
+                if (password1 && name) 
                 {
-                    event.preventDefault();
-                    validateForm();
-                };
+                    location.href="../index.html"              
+                  } 
+                else 
+                {
+
+                    alert("no");
+                }
+                                
             }
             
-            function OpenLogin() 
+
+            registerB.onclick= function()
             {
-                EF.style.maxHeight = "0";
-                Vp.style.maxHeight = "0";
-                Fp.style.display = "block";
-                Fp.style.maxHeight = "60px";
-                si.classList.add("Transition");
-                li.classList.remove("Transition");
+                location.href="Signup.html";
             }
+
+
             
-            si.addEventListener("click", function(event) 
-            {
-                
-                    event.preventDefault();
-                    OpenSignUp();
-                
-            });
-        
-            li.addEventListener("click", function(event) 
-            {
-                event.preventDefault();
-                OpenLogin();
-            });
 
         </script>
         
     </body>
     </html>
-        <!--End of fotter section-->
