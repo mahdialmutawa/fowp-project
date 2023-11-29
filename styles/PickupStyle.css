@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+*{
+    font-family: 'Share', sans-serif;
+}
+
+#main
+{
+    margin: 0px 20px;
+}
+
+body
+{
+    font-family: 'Share', sans-serif;
+}
+
+#back
+{
+    margin-top: 15px;
+    margin-right: -100px;
+    color: #204F6A;
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    border-radius: 30px;
+    border-width: 0px;
+    border-color: white;
+    font-size: 25px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#h1i
+{
+    margin-right: 250px;
+    color: #204F6A;
+    font-size: 50px;
+}
+
+
+#divid
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    border-radius:15px;
+    border-width: 0px;
+    color: white;
+    font-size: 25px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    height: 370px;
+    width: 1000px;
+}
+
+#divid1
+{
+    display: inline; 
+    width: 1000px;   
+}
+
+#img1
+{
+    width: 1000px;
+}
+
+#circleid
+{
+    float: right;
+    margin-right: 10px;
+}
+
+#srton
+{
+    color: black;
+    margin-right: 25px ;
+    margin-top: 18px;
+    display: inline-block;
+}
+
+#divid3
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-color: white;
+    border-radius:15px;
+    border-width: 0px;
+    font-size: 25px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 180px;
+    width: 1000px;
+}
+
+#innerimg
+{
+    float: right;
+    margin-top: 23px;
+    display: inline;
+}
+
+#PForInfo
+{
+    display: inline;
+    margin-top: 00%;
+    color: black;
+
+}
+
+#num
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #b8cddc;
+    border-width: 0px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    color: white;
+    font-size: 25px;
+    display: inline;
+}
+
+h2
+{
+    color: black;
+    font-size: 33px;
+}
+h6
+{
+    color: black;
+    margin-top: -35px;
+    margin-right: 100px;
+    font-size: small;
+}
+
+h5
+{
+    color: black;
+    margin-right: 270px;
+    margin-top: -50px;
+    color: #4C88AD;
+}
+
+/* Header */
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+*{
+    font-family: 'Share', sans-serif;
+}
+
+div.Legainaha_signature
+{
+    display: inline-flex;
+    margin: 0px 0px 0px 5px;
+    font-size: 25pt;
+    color: #307095;
+}
+.Legainaha_signature a, a:visited, a:active,a:link, a:hover
+{
+    margin: 12px 0px 12px 10px;
+    text-decoration: none;
+    color: #307095;
+}
+div.search_section
+{
+    
+    margin: 10px 0px 10px 50px;
+    width: 100%;
+}
+
+.search_section select
+{
+    margin-top: 4px;
+    margin-left: 10%;
+    width: 85px;
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url('../assets/images/location.png'); 
+    background-repeat: no-repeat;
+    background-position:right;
+    background-size: 15px;
+    padding: 4px 6px;
+    border-color: #204F6A;
+    color: #307095;
+    border-radius: 15px;
+    height: 40px;
+    border-width: 2.5px;
+}
+.search_section input
+{
+    border: 2.5px #204F6A solid;
+    border-radius: 15px;
+    margin: 5px;
+    height:35px;
+}
+
+.navigation_links ul
+{  
+    list-style-type: none;
+    margin: 10px;
+    padding: 0;
+    width: auto;
+    display: inline-flex;
+}
+
+.navigation_links ul > li {
+   display: inline-flex;
+   margin: 0px 10px;
+   top: 0px;
+   height: 50px;
+}
+
+.navigation_links ul li a {
+    display: inline-flex;
+    width: max-content;
+    height: 30px;
+    text-align: center;
+    margin: 10px 10px ;
+}
+.navigation_links ul li a img {
+    margin: 0px 10px;
+}
+
+#sign_login_anchor img
+{
+    width: 20pt;
+    height: 19px;
+}
+#Favorite img
+{
+    width: 19pt;
+    height: 18px;
+}
+#cart img
+{
+    width: 20pt;
+    height: 19px;
+}
+
+header
+{
+    display: inline-flex;
+    position: sticky;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.121);
+    max-height: max-content;
+    min-width:max-content;
+    width: 100%;
+}
+
+.vertical {
+  border: 3px solid #204f6a5a;
+  height: 30px;
+  margin: 6px;
+  border-radius: 10px;
+  width: 100%
+}
+
+/* Fotter */ 
+footer
+{
+    background-color: #E6E6EF ;
+    width: 100%;
+    border: #C9C9C9 2px solid;
+    direction: rtl;
+    max-height: max-content;
+    min-width:max-content;
+    display: flex;
+}
+div.legainaha_info
+{
+float: right;
+    margin: 80px 50px;
+    font-size: large;
+}
+div.legainaha_info img
+{
+    margin: 0px 0px 0px 30px;
+}
+div.contact
+{
+display: inline;
+    float: left;
+    font-size: large;
+    margin: 160px 250px;
+}
+div#tel
+{
+    display: inline-flex
+}
+div#email
+{
+    display: inline-flex;
+}
+
+div.related_topics
+{
+    margin: 80px 300px;
+}
+div.related_topics ul
+{
+    list-style-type: none;
+    display:inline-block;
+}
+div.related_topics p
+{
+    font-size: large;
+    margin: 20px 40px;
+}
+div.social_media
+{
+    margin: 20px 40px;
+}
