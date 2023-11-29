@@ -3,29 +3,11 @@
     font-family: 'Share', sans-serif;
 }
 
-#main
-{
-    margin: 0px 400px;
-}
 
 body
 {
     font-family: 'Share', sans-serif;
 
-}
-
-#back
-{
-    margin-top: 15px;
-    color: #204F6A;
-    width: 180px;
-    height: 50px;
-    background-color: white;
-    border-radius: 30px;
-    border-width: 0px;
-    border-color: white;
-    font-size: 25px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #h1i
@@ -34,18 +16,18 @@ body
     color: #204F6A;
 }
 
-#marg
+#city,#zib, #address, #build
 {
     display: block;
     margin-top: 20px;
-    margin-right: 600px;
+    margin-right: 30%;
     width: 500px;
     height: 50px;
 }
 
 #checkboxid
 {
-    margin-right: 600px;
+    margin-right: 30%;
     margin-top: 20px;
     
 }
@@ -68,7 +50,12 @@ h6
     border-width: 0px;
     color: white;
     font-size: 25px;
-    margin-right: 630px;
+    margin-right: 35%;
     margin-top: 30px;
     margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#page-title{
+    margin: 10px 35%;
 }

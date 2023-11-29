@@ -5,7 +5,8 @@
 
 #main
 {
-    margin: 0px 400px;
+    margin: 0px 100px;
+    width: 100%;
 }
 
 #back
@@ -24,7 +25,7 @@
 
 #h1i
 {
-    margin-right: 280px;
+    margin-right: 30%;
     color: #204F6A;
 }
 
@@ -32,26 +33,35 @@ button
 {
     border: 0px;
     background-color: white;
+    cursor: pointer;
 }
 
 #pic1
 {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin-top: 100px;
+    margin-right: 80%;
 }
 
 #pic2
 {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     margin-top: 100px;
-    margin-right: 40px;
+    margin-right: 150%;
 }
 
-p
+.getMethod
 {
+    width: 100%;
     font-size: 40px;
     color: #204F6A;
-    margin-top: -1px;
+}
+
+#rights{
+    margin-right: 70%;
+}
+#lefts{
+    margin-right: 130%;
 }
