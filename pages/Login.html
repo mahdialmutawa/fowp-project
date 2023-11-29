@@ -2,7 +2,7 @@
 
 <html lang="ar" dir="rtl">
     <head>
-        <link rel="stylesheet" href="Loginstyle.css">
+        <link rel="stylesheet" href="../styles/Loginstyle.css">
         <title>
             Login
         </title>
@@ -15,8 +15,8 @@
         <!--Start of header section-->
         <header dir="ltr">
             <div class="Legainaha_signature">
-                <img src="assets/images/Legainaha's logo.svg">
-                <a href="index.html">Legainaha</a>
+                <img src="../assets/images/Legainaha's logo.svg">
+                <a href="../index.html">Legainaha</a>
             </div>
       
             <nav>
@@ -34,9 +34,9 @@
         <div class="container  ">
             <div class = "Login-box">
                 <h1>اهلا بك في لِقيناها</h1>
-                <form>
+                <form onsubmit="validateForm();" id="myform">
                     <div class = "Inp">
-                        <div class = "inputF" id>
+                        <div class = "inputF" id="username">
                             <input type="text" placeholder="أسم المستخدم" required>
                         </div>
                         <div class = "Inp">
@@ -44,10 +44,10 @@
                                 <input type="email" placeholder="البريد الالكتروني" required>
                             </div>
                         <div class = "inputF">
-                            <input type="password" placeholder="كلمة المرور" required>
+                            <input type="password" placeholder="كلمة المرور" required id="pass">
                         </div> 
                         <div class = "inputF" id = "PassVerify">
-                            <input type="password" placeholder="تأكيد كلمة المرور" required>
+                            <input type="password" placeholder="تأكيد كلمة المرور" required id="vpass">
                         </div> 
 
                         <div class="forgot-password">
@@ -60,10 +60,10 @@
                     </div>
 
                     <div class = "buttonF">
-                        <button type = "button" id = "si">
+                        <button type = "submit" id = "si">
                         انشاء حساب 
                         </button>
-                        <button type = "button" id = "li" class="Transition">
+                        <button type = "submit" id = "li" class="Transition">
                             تسجيل دخول 
                         </button>
                     </div>
@@ -165,29 +165,63 @@
             var EF = document.getElementById("EmailF"); 
             var Vp = document.getElementById("PassVerify"); 
             var Fp = document.getElementById("ForgotPass");
-            
+            const form = document.getElementById("myform");
             
             EF.style.maxHeight = "0";
             Vp.style.maxHeight = "0";
+        
+            function validateForm()
+             {
+                const p1 = document.getElementById("pass").value;
+                const p2 = document.getElementById("vpass").value;
+                
+                if (p1 === p2) {
+                    // Update user password in the database
+        
+                    // Redirect to Login.html
+                    window.location.href = 'Login.html';
+                }
+            }
             
-            
-            si.onclick = function() 
+            function OpenSignUp() 
             {
                 EF.style.maxHeight = "60px";
                 Vp.style.maxHeight = "60px";
                 Fp.style.display = "none";
-                
                 si.classList.remove("Transition");
                 li.classList.add("Transition");
+                
+                si.onclick = function(event) 
+                {
+                    event.preventDefault();
+                    validateForm();
+                };
             }
-        
-            li.onclick = function() {
+            
+            function OpenLogin() 
+            {
                 EF.style.maxHeight = "0";
                 Vp.style.maxHeight = "0";
+                Fp.style.display = "block";
                 Fp.style.maxHeight = "60px";
                 si.classList.add("Transition");
                 li.classList.remove("Transition");
             }
+            
+            si.addEventListener("click", function(event) 
+            {
+                
+                    event.preventDefault();
+                    OpenSignUp();
+                
+            });
+        
+            li.addEventListener("click", function(event) 
+            {
+                event.preventDefault();
+                OpenLogin();
+            });
+
         </script>
         
     </body>

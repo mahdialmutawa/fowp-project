@@ -53,27 +53,28 @@ div.search_section
 .navigation_links ul
 {  
     list-style-type: none;
-    margin: 0;
+    margin: 10px;
     padding: 0;
-    overflow: hidden;
-    width: 250px;
+    width: auto;
+    display: inline-flex;
 }
 
 .navigation_links ul > li {
    display: inline-flex;
-   margin: 0 auto;
+   margin: 0px 10px;
    top: 0px;
    height: 50px;
 }
 
 .navigation_links ul li a {
     display: inline-flex;
-    width: auto;
-    height: 50px;
-    width: 100px;
+    width: max-content;
+    height: 30px;
     text-align: center;
-    border: 1px solid black;
-    margin: 0 30px;
+    margin: 10px 10px ;
+}
+.navigation_links ul li a img {
+    margin: 0px 10px;
 }
 
 #sign_login_anchor img
@@ -129,6 +130,7 @@ footer
 }
 div.legainaha_info
 {
+float: right;
     margin: 80px 50px;
     font-size: large;
 }
@@ -138,8 +140,10 @@ div.legainaha_info img
 }
 div.contact
 {
+display: inline;
+    float: left;
     font-size: large;
-    margin: 80px 50px;
+    margin: 160px 250px;
 }
 div#tel
 {
@@ -377,6 +381,7 @@ div.social_media
 }
 
 #LS_backButton {
+visibility: hidden;
     margin-left: -60px;
     margin-right: -60px;
 }
