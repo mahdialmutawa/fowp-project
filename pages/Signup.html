@@ -154,7 +154,8 @@
 
     Create.addEventListener("click", ButtonClicked);
 
-    function ButtonClicked() {
+    function ButtonClicked() 
+    {
         var password1 = document.getElementById("Password").value;
         var password2 = document.getElementById("PasswordConfirm").value;
 
@@ -162,19 +163,27 @@
         let email = document.getElementById("email").value.trim();
         let pnum = document.getElementById("pnum").value.trim();
 
-        if (password1 === password2 && fname && email && pnum) {
-            // Valid input, proceed with action
+        if (password1 === password2 && fname && email && pnum) 
+        {
+            event.preventDefault(); 
             location.href = "Login.html";
         }
-        else {
-            // Invalid input, display appropriate error message
-            if (password1 !== password2) {
+        else 
+        {
+            if (password1 !== password2) 
+            {
                 alert("Passwords do not match. Please make sure your passwords match.");
-            } else if (!fname) {
+            } 
+            else if (!fname) 
+            {
                 alert("Please enter your first name.");
-            } else if (!email) {
+            } 
+            else if (!email) 
+            {
                 alert("Please enter your email address.");
-            } else if (!pnum) {
+            }
+             else if (!pnum)
+            {
                 alert("Please enter your phone number.");
             }
         }
