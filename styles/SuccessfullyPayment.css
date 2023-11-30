@@ -3,9 +3,14 @@
     font-family: 'Share', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+*{
+    font-family: 'Share', sans-serif;
+}
+
 #main
 {
-    margin: 0px 400px;
+    margin: 0px 200px;
 }
 
 body
@@ -30,16 +35,16 @@ body
 
 #innerimg
 {
-    margin-right: 65px;
+    margin-right: 120px;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 770px;
-    height: 600px;
+    width: 570px;
+    height: 400px;
 }
 
 #link
 {
     margin-right: 275px;
     font-size: 50px;
-    text-decoration:underline;
+    text-decoration:none;
 }
