@@ -5,7 +5,7 @@
 
 #main
 {
-    margin: 0px 400px;
+    margin: 0px 200px;
 }
 
 body
@@ -30,9 +30,9 @@ body
 
 #innerimg
 {
-    margin-right: 100px;
+    margin-right: 150px;
     margin-top: 30px;
     margin-bottom: 20px;
-    width: 720px;
-    height: 600px;
+    width: 500px;
+    height: 400px;
 }
