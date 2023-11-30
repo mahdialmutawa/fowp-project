@@ -156,34 +156,40 @@
         <script>
             var registerB = document.getElementById("si");
             var LoginB = document.getElementById("li");
-
-            
-            LoginB.onclick= function()
+        
+            LoginB.onclick = function (event) 
             {
-                var password1 = document.getElementById("passwordInput").value;
-                var name = document.getElementById("nameInput").value;
-
-                if (password1 && name) 
+                event.preventDefault(); 
+        
+                
+                if (required("nameInput") && required("passwordInput")) 
                 {
-                    location.href="../index.html"              
-                  } 
-                else 
-                {
-
-                    alert("no");
+                    
+                    var confirmed = window.confirm("اسم المستخدم و كلمة المرور صحيحة, اضغط حسنا للانتقال الى الصفحة الرئيسية");
+                    if (confirmed) {
+                        
+                        window.location.href = "../index.html";
+                    }
                 }
-                                
+            };
+        
+            registerB.onclick = function ()
+             {
+                location.href = "Signup.html";
+            };
+        
+            function required(inputId) {
+                var input = document.getElementById(inputId);
+                var value = input.value;
+        
+                if (value === "") 
+                {
+                    alert("تأكد من إدخال اسم المستخدم وكلمة المرور الخاصة بك");
+                    return false;
+                } else {
+                    return true;
+                }
             }
-            
-
-            registerB.onclick= function()
-            {
-                location.href="Signup.html";
-            }
-
-
-            
-
         </script>
         
     </body>

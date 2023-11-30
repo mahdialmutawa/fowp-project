@@ -2,45 +2,33 @@
 
 <html lang="ar" dir="rtl">
     <head>
-        <link rel="stylesheet" href="../styles/land_style.css">
+        
         <link rel="stylesheet" href="../styles/ConfirmationFrame.css">
         <title>
-            Landing page
+            Confirmation
         </title>
         
     </head>
 
     <body>
+        <!--Start of header section-->
         <header dir="ltr">
             <div class="Legainaha_signature">
                 <img src="../assets/images/Legainaha's logo.svg">
-                <a href="index.html">Legainaha</a>
+                <a href="../index.html">Legainaha</a>
             </div>
-            <div class="search_section">
-                <select name="Cities" style="font-size: 14pt;">
-                    <option value="HSA">الاحساء</option>
-                    <option value="DMM">الدمام</option>
-                    <option value="RYD">الرياض</option>
-                </select>
-                <input type="text" size="49" placeholder="ماهي القطعة التي تبحث عنها؟" style="font-size: 14pt; text-align: right; padding: 0px 12px 0px 0px;">
-            </div>
+      
             <nav>
                 <div class="navigation_links">
-                    <ul>
-                        <li>
-                            <a href="#">تسجيل الدخول</a>
-                        </li>
-                        <li>
-                            <a href="">السلة</a>
+                    
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <br>
 
         <div id="main">
-            <button type="button" id="back">الرجوع</button>
+            
             <h1 id="h1i">معلومات الدفع</h1>
             <form id="formid">
                 <label for="cardname" id="id1">الاسم الظاهر على البطاقه</label>
@@ -62,16 +50,17 @@
 
                 <input type="number" maxlength="3" name="cardcode" id="id9" placeholder="CVC">
                 <br>
+                <p>
+                    المجموع هو<strong> 217.35 ر.س </strong> 
+               </p>
+               <p id="secondP">
+                   شامل الضريبة (%15)
+               </p>
+   
+               <button id="buttonid">إتمام الدفع</button>
             </form>
 
-            <p>
-                 المجموع هو<strong> 217.35 ر.س </strong> 
-            </p>
-            <p id="secondP">
-                شامل الضريبة (%15)
-            </p>
-
-            <button id="buttonid">إتمام الدفع</button>
+            
 
         </div>
 
@@ -111,52 +100,7 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="related_topics">
-                <p>
-                    <strong>روابط مهمه</strong>
-                </p>
-                <ul>
-                    <li>
-                        <a href="RetunPolicy.html" id="return" style="font-size: 12pt;">
-                            سياسة الاستبدال والإسترجاع
-                        </a>
-                    </li>
-                    <li>
-                        <a href="ShipandDeliverPolicy.html" id="return" style="font-size: 12pt;">
-                            الشحن والتوصيل                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="PrivacyPolict.html" id="return" style="font-size: 12pt;">
-                            سياسة الخصوصية                        
-                        </a>
-                    </li>
-                    <li>
-                        <a href="BranchCollectingPolicy.html" id="return" style="font-size: 12pt;">
-                            سياسة الاستلام من الفروع
-                        </a>
-                    </li>
-                    <li>
-                        <a href="LoyalityPointsPolicy.html" id="return" style="font-size: 12pt;">
-                            نقاط الولاء
-                        </a>
-                    </li>
-                </ul>
-                <p><strong>تابعنا على</strong></p>
-                <div class="social_media">
-                    <a href="https://tiktok.com/en/legainaha">
-                        <img src="/assets/images/tiktok.svg">
-                    </a>
-                    <a href="https://x.com/Legainaha">
-                        <img src="/assets/images/x.svg">
-                    </a>
-                    <a href="https://instagram.com/legainaha">
-                        <img src="/assets/images/instagram.svg">
-                    </a>
-                </div>
-            </div>
-        </footer>
-        <script src="./scripts/land_script.js"></script>
+                    </footer>
+        
     </body>
-</html>
+</html
