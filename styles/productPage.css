@@ -29,7 +29,7 @@ body
 
 #imid
 {
-    height: 300px;
+    height: 230px;
     margin-right: 250px;
 }
 input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
@@ -41,36 +41,40 @@ input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
     text-align: center;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     margin-right: 20px;
+    margin-left: 20px;
     border-radius: 10px;
     border-width: 0px;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 18px;
+    margin-top: 7px;
     width: 80px;
-    height: 59px;
+    height: 50px;
     font-size: 17px;
     
 }
 
 #but
 {
+    margin-top: 40px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    width: 580px;
+    width: 400px;
     height: 60px;
     background-color: #3278A1;
     border-radius:15px;
     border-width: 0px;
     color: white;
     font-size: 25px;
+    cursor: pointer;
     
 }
 
 
-#did
+.did
 {
     width: 95px;
+    padding: 5px;
     border-radius: 25px;
     color: white;
-    background-color: #3278A1;
+    background-color: #3278a1b7;
     text-align: center;
     margin-top: 0px;
     margin-right: 700px;
