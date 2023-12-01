@@ -3,40 +3,15 @@
     font-family: 'Share', sans-serif;
 }
 
-#main
+#TitleOfPage
 {
-    margin: 0px 20px;
+    font-size: 32px;
+    color: #204F6A; 
+    font-weight: 900;
+    text-align: center;
 }
 
-body
-{
-    font-family: 'Share', sans-serif;
-}
-
-#back
-{
-    margin-top: 15px;
-    margin-right: -100px;
-    color: #204F6A;
-    width: 180px;
-    height: 50px;
-    background-color: white;
-    border-radius: 30px;
-    border-width: 0px;
-    border-color: white;
-    font-size: 25px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-#h1i
-{
-    margin-right: 250px;
-    color: #204F6A;
-    font-size: 50px;
-}
-
-
-#divid
+#Container
 {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     background-color: white;
@@ -44,36 +19,51 @@ body
     border-width: 0px;
     color: white;
     font-size: 25px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 30px;
+    margin: 0 auto;
     height: 370px;
-    width: 1000px;
-}
+    width: 70%;
 
-#divid1
-{
-    display: inline; 
-    width: 1000px;   
 }
 
 #img1
 {
-    width: 1000px;
+    width: 100%;
+    height: 70%;
+    
+}
+#img2{
+    border-radius: 100%;
+    border: 2px thin #3278A1;
+    padding-top: 12px;
+}
+#Store{
+    padding-right: 75px;
+
 }
 
-#circleid
+div p 
 {
-    float: right;
-    margin-right: 10px;
+    margin-top: -60px;
+    padding-right: 80px;
+    padding-top: 5px;
+    color: #204F6A; 
+    font-size: 20px;
+    font-weight: 700;
+}
+#locimg
+{
+    margin-top: -70px;
+    margin-bottom: 150px;
+    padding-right: 680px;
+    width: 05%;
+    height: 10%;
 }
 
-#srton
+#P1
 {
-    color: black;
-    margin-right: 25px ;
-    margin-top: 18px;
-    display: inline-block;
+    margin-top: -160px;
+    margin-bottom: 200px;
+    margin-right: 63%;
 }
 
 #divid3
@@ -84,7 +74,7 @@ body
     border-width: 0px;
     font-size: 25px;
     margin-right: 0px;
-    margin-top: 0px;
+    margin-top: -110px;
     margin-bottom: 50px;
     height: 180px;
     width: 1000px;
@@ -134,11 +124,33 @@ h6
 h5
 {
     color: black;
-    margin-right: 270px;
-    margin-top: -50px;
+    margin-top: 20px;
     color: #4C88AD;
 }
 
+#formstyle
+{
+    margin-top: -90px;
+    padding-right: 780px;
+    width: 05%;
+    height: 10%;
+}
+
+#buttonid
+{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 400px;
+    height: 50px;
+    background-color: #3278A1;
+    border-radius:15px;
+    border-width: 0px;
+    color: white;
+    font-size: 25px;
+    margin-right: 35%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
 /* Header */
 @import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
 *{
