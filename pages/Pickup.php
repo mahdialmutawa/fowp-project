@@ -3,6 +3,7 @@
 <html lang="ar" dir="rtl">
     <head>
         <link rel="stylesheet" href="../styles/PickupStyle.css">
+        <link rel="stylesheet" href="../styles/land_style.css">
         <title>
             Landing page
         </title>
@@ -10,32 +11,7 @@
     </head>
 
     <body >
-        <header dir="ltr">
-            <div class="Legainaha_signature">
-                <img src="../assets/images/Legainaha's logo.svg">
-                <a href="index.html">Legainaha</a>
-            </div>
-            <div class="search_section">
-                <select name="Cities" style="font-size: 14pt;">
-                    <option value="HSA">الاحساء</option>
-                    <option value="DMM">الدمام</option>
-                    <option value="RYD">الرياض</option>
-                </select>
-                <input type="text" size="49" placeholder="ماهي القطعة التي تبحث عنها؟" style="font-size: 14pt; text-align: right; padding: 0px 12px 0px 0px;">
-            </div>
-            <nav>
-                <div class="navigation_links">
-                    <ul>
-                        <li>
-                            <a href="#">تسجيل الدخول</a>
-                        </li>
-                        <li>
-                            <a href="">السلة</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <?php include('header.php');?>
         
         <div>
             <p id = "TitleOfPage">
