@@ -116,7 +116,7 @@
        </section>
        <div id="ConfirmationRectangle">
             <div id="CloseCircle">
-                <a href="../pages/CurrentOrderPage.html">
+                <a href="../pages/CurrentOrderPage.php">
                     <img src="../assets/images/close.svg">
                 </a>
             </div>

@@ -57,7 +57,7 @@
                 if (password1 === password2 && password1 && password2) 
                 {
                     
-                    window.open('Login.html', '_blank'); 
+                    window.open('Login.php', '_blank'); 
                 } 
                 else 
                 {

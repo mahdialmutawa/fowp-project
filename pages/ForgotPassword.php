@@ -40,7 +40,7 @@
                     
 
 
-                    <a href="Login.html" style="text-decoration: none;">
+                    <a href="Login.php" style="text-decoration: none;">
                         <div id = "Confirm">
                             <button>تأكيد</button>
                         </div>
@@ -103,7 +103,7 @@
                  {
                     var confirmed = window.confirm("رمز التحقق صحيح, بامكانك الان تغيير كلمة المرور");
                     if (confirmed) {
-                        window.location.href = "ChangePassword.html";
+                        window.location.href = "ChangePassword.php";
                     }
                     return true;
                 }

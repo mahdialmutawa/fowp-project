@@ -101,7 +101,7 @@
                         return;
                     }
                     
-                     window.open("SuccessfullyPayment.html");
+                     window.open("SuccessfullyPayment.php");
                 }
             };
 

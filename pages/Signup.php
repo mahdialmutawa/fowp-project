@@ -3,7 +3,7 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <link rel="stylesheet" href="../styles/SignupSyle.css">
+    <link rel="stylesheet" href="../styles/SignupSyle.css?v=<?php echo time();?>">
     <title>
         Sign up
     </title>
@@ -14,7 +14,7 @@
     <header dir="ltr">
         <div class="Legainaha_signature">
             <img src="../assets/images/Legainaha's logo.svg">
-            <a href="../index.html">Legainaha</a>
+            <a href="../index.php">Legainaha</a>
         </div>
 
         <nav>
@@ -27,35 +27,27 @@
     </header>
 
     <div class="container">
-        <div class="signup-box">
+        <div class="signup-box" >
             <h2>اهلا بك في لِقيناها</h2>
-            <form>
+            
+            <form action="./php/sign-up.php" method="POST" id="sign-up-form" name="new-cust" >
                 <div class="inputF">
-                    <input type="text" placeholder="الاسم الاول " required id="fname"><br>
+                    <input type="text" placeholder="الاسم الاول " required id="fname" name="fname"><br>
                 </div>
                 <div class="inputF">
-                    <input type="email" placeholder="البريد الالكتروني" required id="email"><br>
+                    <input type="email" placeholder="البريد الالكتروني" required id="email" name="email"><br>
                 </div>
                 <div class="inputF">
-                    <input type="number" placeholder="رقم الجوال" required id="pnum"><br>
+                    <input type="number" placeholder="رقم الجوال" required id="pnum" name="pnum"><br>
                 </div>
                 <div class="inputF">
-                    <input type="password" placeholder="كلمة المرور" required id="Password"><br>
+                    <input type="password" placeholder="كلمة المرور" required id="Password" name="pwd"><br>
                 </div>
                 <div class="inputF">
-                    <input type="password" placeholder="تأكيد كلمة المرور" required id="PasswordConfirm"><br>
+                    <input type="password" placeholder="تأكيد كلمة المرور" required id="PasswordConfirm" name="conpwd"><br>
                 </div>
 
-
-
-                <a href="Login.html" style="text-decoration: none;">
-                    <div>
-                        <button id="createButton">
-                            انشاء حساب
-                        </button>
-                    </div>
-
-                </a>
+                <input type="submit" name="test" value="إنشاء حساب">
 
             </form>
 
@@ -67,88 +59,7 @@
 
 </body>
 
-<footer>
-    <div class="general_info">
-        <div class="legainaha_info">
-            <a href="#">
-                <img src="/assets/images/grey logo.svg">
-                <img src="/assets/images/legainaha.svg">
-            </a>
-            <p>
-                <strong>لِقيناها منصــة إلـكتــرونـيـــه مُعتمـــدة</strong>
-                <br>
-                لخدمات ما بعد البيع شاملة لكل ما تحتاجه
-                <br>
-                السياره من قطع الغبار والإطارات والزيوت
-                <br>
-                وغيرها من إحتياجات السيارة من خلال
-                <br>
-                الربط التقني المباشر بين المستخدم وبين
-                <br>
-                شركائنا حول المملكة.
-            </p>
-        </div>
-        <div class="contact">
-            <p>
-                <strong>تواصل معنا</strong>
-            </p>
-            <div id="tel">
-                <img src="/assets/images/call.svg">
-                <a href="tel:0544090264" style="color: black; margin-right: 10px">800xxxxxxx</a>
-            </div>
-            <br>
-            <div id="email">
-                <img src="/assets/images/email.svg">
-                <a href="mailto:care@legainaha.com" style="color: black; margin-right: 10px;">care@Legainaha.com</a>
-            </div>
-        </div>
-    </div>
 
-    <div class="related_topics">
-        <p>
-            <strong>روابط مهمه</strong>
-        </p>
-        <ul>
-            <li>
-                <a href="RetunPolicy.html" id="return" style="font-size: 12pt;">
-                    سياسة الاستبدال والإسترجاع
-                </a>
-            </li>
-            <li>
-                <a href="ShipandDeliverPolicy.html" id="return" style="font-size: 12pt;">
-                    الشحن والتوصيل
-                </a>
-            </li>
-            <li>
-                <a href="PrivacyPolict.html" id="return" style="font-size: 12pt;">
-                    سياسة الخصوصية
-                </a>
-            </li>
-            <li>
-                <a href="BranchCollectingPolicy.html" id="return" style="font-size: 12pt;">
-                    سياسة الاستلام من الفروع
-                </a>
-            </li>
-            <li>
-                <a href="LoyalityPointsPolicy.html" id="return" style="font-size: 12pt;">
-                    نقاط الولاء
-                </a>
-            </li>
-        </ul>
-        <p><strong>تابعنا على</strong></p>
-        <div class="social_media">
-            <a href="https://tiktok.com/en/legainaha">
-                <img src="/assets/images/tiktok.svg">
-            </a>
-            <a href="https://x.com/Legainaha">
-                <img src="/assets/images/x.svg">
-            </a>
-            <a href="https://instagram.com/legainaha">
-                <img src="/assets/images/instagram.svg">
-            </a>
-        </div>
-    </div>
-</footer>
 <script>
     var Create = document.getElementById("createButton");
 
@@ -166,7 +77,6 @@
         if (password1 === password2 && fname && email && pnum && password1 && password2) 
         {
             event.preventDefault(); 
-            location.href = "Login.html";
         }
         else 
         {

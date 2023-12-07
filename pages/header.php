@@ -17,7 +17,7 @@
                 </a>
             </li>
             <li>
-                <a href="./pages/cartPage.html"><img src="../assets/images/cart.svg">السلة</a>
+                <a href="./pages/cartPage.php"><img src="../assets/images/cart.svg">السلة</a>
             </li>
         </ul>
     </div>
