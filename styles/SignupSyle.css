@@ -184,6 +184,8 @@ input[name="test"]
     transition: max-height 0.5s;
     overflow: hidden;
 
+    
+
 }
 
 input
@@ -194,4 +196,6 @@ input
  border: 0;
  outline: 0;
  padding: 18px 15x;
+
+ 
 }
