@@ -104,6 +104,8 @@ body
     transition: max-height 0.5s;
     overflow: hidden;
 
+    
+
 }
 
 input
@@ -114,6 +116,8 @@ input
  border: 0;
  outline: 0;
  padding: 18px 15x;
+
+ 
 }
 
 form a 
@@ -125,11 +129,13 @@ form a
  
 }
 
+
 .buttonF
 {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 120px;
 }
 
 .buttonF button
@@ -144,13 +150,6 @@ form a
  cursor: pointer;
  transition: background 1s;
 }
-
-.buttonF button.Transition
-{
-    background: #eaeaea;
-    color: #307095;
-}
-
 
 /*End of body style*/ 
 

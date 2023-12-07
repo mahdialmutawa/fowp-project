@@ -34,14 +34,14 @@
         <div class="container  ">
             <div class = "Login-box">
                 <h1>اهلا بك في لِقيناها</h1>
-                <form id="myform">
+                <form id="myform" name="sign-in" method="POST" action="./php/sign-in.php">
                     <div class = "Inp">
                         <div class = "inputF" id="username">
-                            <input type="text" placeholder="أسم المستخدم" required id = "nameInput">
+                            <input type="text" placeholder="أسم المستخدم" required id = "nameInput" name="username">
                         </div>
                         <div class = "Inp">
                         <div class = "inputF">
-                            <input type="password" placeholder="كلمة المرور" required id="passwordInput">
+                            <input type="password" placeholder="كلمة المرور" required id="passwordInput" name="pwd">
                         </div> 
 
                         <div class="forgot-password">
@@ -53,14 +53,16 @@
                         </div>
                     </div>
 
-                    <div class = "buttonF">
-                        <button type = "submit" id = "si">
+                    <div class = "buttonF" style = "margin-bottom: -26px">
+                        <button id = "si">
                         انشاء حساب 
                         </button>
-                        <button type = "submit" id = "li">
-                            تسجيل دخول 
-                        </button>
                     </div>
+
+                        <input type="submit" name="signnn" value = "تسجيل دخول" style = "background-color: #307095; color: white; border: none; padding: 10px 32px; text-align: center; font-size: 16px;  border-radius: 8px; cursor: pointer; width: 50%; font-weight: bolder; flex-basis: 46%; margin-right: 170px; margin-top: -170px;">
+                        <!-- <button type = "submit" id = "li">
+                            تسجيل دخول 
+                        </button> -->
                 </form>
             </div>
         </div>
@@ -73,8 +75,8 @@
             <div class="general_info">
                 <div class="legainaha_info">
                     <a href="#">
-                        <img src="/assets/images/grey logo.svg">
-                        <img src="/assets/images/legainaha.svg">
+                        <img src="../assets/images/grey logo.svg">
+                        <img src="../assets/images/legainaha.svg">
                     </a>
                     <p>
                         <strong>لِقيناها منصــة إلـكتــرونـيـــه مُعتمـــدة</strong>
@@ -95,12 +97,12 @@
                         <strong>تواصل معنا</strong>
                     </p>
                     <div id="tel">
-                        <img src="/assets/images/call.svg">
+                        <img src="../assets/images/call.svg">
                         <a href="tel:0544090264" style="color: black; margin-right: 10px">800xxxxxxx</a>
                     </div>
                     <br>
                     <div id="email">
-                        <img src="/assets/images/email.svg">
+                        <img src="../assets/images/email.svg">
                         <a href="mailto:care@legainaha.com" style="color: black; margin-right: 10px;">care@Legainaha.com</a>
                     </div>
                 </div>
@@ -140,13 +142,13 @@
                 <p><strong>تابعنا على</strong></p>
                 <div class="social_media">
                     <a href="https://tiktok.com/en/legainaha">
-                        <img src="/assets/images/tiktok.svg">
+                        <img src="../assets/images/tiktok.svg">
                     </a>
                     <a href="https://x.com/Legainaha">
-                        <img src="/assets/images/x.svg">
+                        <img src="../assets/images/x.svg">
                     </a>
                     <a href="https://instagram.com/legainaha">
-                        <img src="/assets/images/instagram.svg">
+                        <img src="../assets/images/instagram.svg">
                     </a>
                 </div>
             </div>
@@ -173,8 +175,8 @@
                 }
             };
         
-            registerB.onclick = function ()
-             {
+            registerB.onclick = function()
+            {
                 location.href = "Signup.php";
             };
         

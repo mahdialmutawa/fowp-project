@@ -12,6 +12,8 @@
     <body>
         <?php include('header.php');?>
         <h1 id="page-title">أهلاً بك في لِقيناها!</h1>
+        
+
         <div class="offers-wrapper">
             <img id="offer1" src="./assets/offers/offer1.png" alt="offer 1">
             <img id="selected-img" src="./assets/offers/offer1.png" alt="offer 2">

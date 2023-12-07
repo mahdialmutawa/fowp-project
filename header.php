@@ -11,10 +11,23 @@
     <div class="navigation_links">
         <ul>
             <li>
-                <a href="./pages/Login.php">
-                    <img src="./assets/images/profile.svg">
-                    تسجيل الدخول
-                </a>
+            <?php
+                session_start();
+
+                if (isset($_SESSION['username'])) 
+                {
+                echo"<br>";
+                echo $_SESSION['username'];
+                }
+                else 
+                {
+                 echo "<a href=\"./pages/Login.php\">".
+                 "<img src=\"./assets/images/profile.svg\">".
+                 "تسجيل الدخول"
+                      ."</a>";
+                 }
+                ?>
+                
             </li>
             <li>
                 <a href="./pages/cartPage.php"><img src="./assets/images/cart.svg">السلة</a>

@@ -1,6 +1,5 @@
 <?php
     if(isset($_POST['test'])){
-        echo 'e';
         $fname = $_POST["fname"];
         $email = $_POST["email"];
         $pnum = $_POST["pnum"];
