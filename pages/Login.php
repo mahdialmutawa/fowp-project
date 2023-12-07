@@ -16,7 +16,7 @@
         <header dir="ltr">
             <div class="Legainaha_signature">
                 <img src="../assets/images/Legainaha's logo.svg">
-                <a href="../index.html">Legainaha</a>
+                <a href="../index.php">Legainaha</a>
             </div>
       
             <nav>
@@ -45,7 +45,7 @@
                         </div> 
 
                         <div class="forgot-password">
-                            <a href="ForgotPassword.html" id = "ForgotPass" style="text-decoration: none;">
+                            <a href="ForgotPassword.php" id = "ForgotPass" style="text-decoration: none;">
                                 <div >
                                     نسيت كلمة المرور؟
                                 </div>
@@ -112,27 +112,27 @@
                 </p>
                 <ul>
                     <li>
-                        <a href="RetunPolicy.html" id="return" style="font-size: 12pt;">
+                        <a href="RetunPolicy.php" id="return" style="font-size: 12pt;">
                             سياسة الاستبدال والإسترجاع
                         </a>
                     </li>
                     <li>
-                        <a href="ShipandDeliverPolicy.html" id="return" style="font-size: 12pt;">
+                        <a href="ShipandDeliverPolicy.php" id="return" style="font-size: 12pt;">
                             الشحن والتوصيل                        
                         </a>
                     </li>
                     <li>
-                        <a href="PrivacyPolict.html" id="return" style="font-size: 12pt;">
+                        <a href="PrivacyPolict.php" id="return" style="font-size: 12pt;">
                             سياسة الخصوصية                        
                         </a>
                     </li>
                     <li>
-                        <a href="BranchCollectingPolicy.html" id="return" style="font-size: 12pt;">
+                        <a href="BranchCollectingPolicy.php" id="return" style="font-size: 12pt;">
                             سياسة الاستلام من الفروع
                         </a>
                     </li>
                     <li>
-                        <a href="LoyalityPointsPolicy.html" id="return" style="font-size: 12pt;">
+                        <a href="LoyalityPointsPolicy.php" id="return" style="font-size: 12pt;">
                             نقاط الولاء
                         </a>
                     </li>
@@ -168,14 +168,14 @@
                     var confirmed = window.confirm("اسم المستخدم و كلمة المرور صحيحة, اضغط حسنا للانتقال الى الصفحة الرئيسية");
                     if (confirmed) {
                         
-                        window.location.href = "../index.html";
+                        window.location.href = "../index.php";
                     }
                 }
             };
         
             registerB.onclick = function ()
              {
-                location.href = "Signup.html";
+                location.href = "Signup.php";
             };
         
             function required(inputId) {

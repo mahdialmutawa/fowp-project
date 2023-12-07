@@ -59,7 +59,7 @@
 
             buttonid.onclick = function()
             {
-                window.open('ConfirmationFrame.html', '_self');
+                window.open('ConfirmationFrame.php', '_self');
             }
         </script>
        

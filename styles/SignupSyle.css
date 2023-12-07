@@ -49,13 +49,6 @@ header
   border-radius: 10px;
   width: 100%
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
-*{
-    font-family: 'Share', sans-serif;
-}
-
 /* This is the footer's section */
 
 footer
@@ -157,7 +150,7 @@ body
     -webkit-appearance: none;
 }
 
-.signup-box button 
+input[name="test"] 
 {
     background-color: #204F6A;
     color: white;
