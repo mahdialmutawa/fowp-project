@@ -22,14 +22,14 @@
 
         <div class="app-sections">
             <div class="sections-title"><h2>تصفح جميع الأقسام</h2></div>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/offers.png" alt="offers-section"> <h4>العروض</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/brands.png" alt="offers-section"> <h4>الماركات</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/tyres.png" alt="offers-section"> <h4>الكفرات</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img class="mech-pic" src="./assets/sections/mech-parts.png" alt="offers-section"> <h4>القطع الميكانيكية</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/car-bodies.png" alt="offers-section"> <h4>البودي</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/oils.png" alt="offers-section"> <h4>الزيوت</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/cons-parts.png" alt="offers-section"> <h4>القطع الإستهلاكية</h4></div></a>
-            <a href="./pages/catigoryResults.php" target="_self"><div class="white-circle"><img src="./assets/sections/elec-parts.png" alt="offers-section"> <h4>القطع الكهربائية</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=offers" target="_self"><div class="white-circle"><img src="./assets/sections/offers.png" alt="offers-section"> <h4>العروض</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=brands" target="_self"><div class="white-circle"><img src="./assets/sections/brands.png" alt="offers-section"> <h4>الماركات</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=tyres" target="_self"><div class="white-circle"><img src="./assets/sections/tyres.png" alt="offers-section"> <h4>الكفرات</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=mechanical" target="_self"><div class="white-circle"><img class="mech-pic" src="./assets/sections/mech-parts.png" alt="offers-section"> <h4>القطع الميكانيكية</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=body" target="_self"><div class="white-circle"><img src="./assets/sections/car-bodies.png" alt="offers-section"> <h4>البودي</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=oils" target="_self"><div class="white-circle"><img src="./assets/sections/oils.png" alt="offers-section"> <h4>الزيوت</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=consume" target="_self"><div class="white-circle"><img src="./assets/sections/cons-parts.png" alt="offers-section"> <h4>القطع الإستهلاكية</h4></div></a>
+            <a href="./pages/catigoryResults.php?category=electric" target="_self"><div class="white-circle"><img src="./assets/sections/elec-parts.png" alt="offers-section"> <h4>القطع الكهربائية</h4></div></a>
         </div>
 
         <?php include('footer.php');?>
