@@ -17,7 +17,7 @@
             $product->description = $row['description'];
 
             /// @Dev-K0
-            echo "<a href=\"\" target=\"_self\">";
+            echo "<a href=\"./productPage.php\" target=\"_self\">";
             echo "<div id=\"merch-pcard\">";
                 echo "<div id=\"p-img\">"; echo "<img src=\"".$product->img."\">"; echo "</div>";
                 
