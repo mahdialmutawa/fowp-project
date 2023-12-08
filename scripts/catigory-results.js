@@ -1,83 +1,3 @@
-const staticProducts = [
-    {
-        name: "some product",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "electrical"
-    },
-    {
-        name: "some product1",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "mechanical"
-    },
-    {
-        name: "some product2",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "tyres"
-    },
-    {
-        name: "some product3",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "consume"
-    },
-    {
-        name: "some product4",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "oils"
-    },
-    {
-        name: "some product5",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "body"
-    },
-    {
-        name: "some product6",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "offers"
-    },
-    {
-        name: "some product7",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "electrical"
-    },
-    {
-        name: "some product8",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "electrical"
-    },
-    {
-        name: "some product9",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "electrical"
-    },
-    {
-        name: "some product10",
-        price: 1000.00,
-        pnum: "xxxxxxxx-xxxx-xxxx-xxxxxxxx",
-        img: "../assets/parts/steering-part1.png",
-        catigory: "electrical"
-    },
-];
-
 const createCard = (product)=>{
     //create card container
     const card = document.createElement("div");
@@ -128,13 +48,13 @@ const createCard = (product)=>{
     return card;
 };
 
-const load = ()=>{
+const load = (products)=>{
     const perant = document.getElementById("merch-prod-container");
-    for(prod of staticProducts){
+    for(let prod of products){
         perant.appendChild(
             createCard(prod)
         );
     }
 };
 
-load();
+// load();

@@ -1,8 +1,8 @@
 -- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
--- Host: 127.0.0.1    Database: web
+-- Host: localhost    Database: web
 -- ------------------------------------------------------
--- Server version	8.0.32
+-- Server version	8.2.0
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -52,6 +52,7 @@ CREATE TABLE `customer` (
   `username` varchar(50) NOT NULL,
   `password` varchar(70) NOT NULL,
   `email` varchar(50) NOT NULL,
+  `phone` varchar(10) NOT NULL,
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -62,6 +63,7 @@ CREATE TABLE `customer` (
 
 LOCK TABLES `customer` WRITE;
 /*!40000 ALTER TABLE `customer` DISABLE KEYS */;
+INSERT INTO `customer` VALUES ('Mahdi ','123','Mahdi.jameel.alzakari5@gmail.com','0576970428');
 /*!40000 ALTER TABLE `customer` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -106,9 +108,10 @@ CREATE TABLE `product` (
   `quantity` int NOT NULL,
   `img` varchar(50) NOT NULL,
   `description` text NOT NULL,
+  `category` varchar(15) NOT NULL,
   PRIMARY KEY (`pnum`),
   CONSTRAINT `product_chk_1` CHECK ((`quantity` >= 0))
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -117,6 +120,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
+INSERT INTO `product` VALUES (1,'صدام امامي',150,2,'https://i.ibb.co/qr4GQ8z/front-Bumper.png','صدام امامي لسيارة كامري','body'),(2,'ذراع دركسون داخلي ',63,4,'https://i.ibb.co/zhLmCzV/image-30.png','ذراع دركسون داخلي لفورد برانكو','mechanical '),(3,'صدام خلفي',80,3,'https://i.ibb.co/qr4GQ8z/front-XX','صدام خلفي لسيارة صني','body');
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -129,4 +133,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-28 12:18:11
+-- Dump completed on 2023-12-08  4:39:24

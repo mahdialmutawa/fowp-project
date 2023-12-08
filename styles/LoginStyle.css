@@ -135,7 +135,19 @@ form a
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 120px;
+}
+
+.buttonF input[name= signnn]
+{
+ flex-basis: 46%;
+ background: #307095;
+ color: #fff;
+ height: 40px;
+ border-radius: 8px;
+ border: 0;
+ outline: 0;
+ cursor: pointer;
+ transition: background 1s;
 }
 
 .buttonF button
