@@ -12,15 +12,14 @@
 
         <div id="main-content">
             <h1 id="main-title">
-                test
+            <?php include("./php/Catigory-func.php");?>
             </h1>
 
             <div id="merch-prod-container">
                 
             </div>
         </div>
-
         <?php include("footer.php");?>
-        <script src="../scripts/catigory-results.js"></script>
+        <?php include("./php/Catres.php");?>
     </body>
 </html>

@@ -53,16 +53,11 @@
                         </div>
                     </div>
 
-                    <div class = "buttonF" style = "margin-bottom: -26px">
-                        <button id = "si">
-                        انشاء حساب 
-                        </button>
-                    </div>
-
-                        <input type="submit" name="signnn" value = "تسجيل دخول" style = "background-color: #307095; color: white; border: none; padding: 10px 32px; text-align: center; font-size: 16px;  border-radius: 8px; cursor: pointer; width: 50%; font-weight: bolder; flex-basis: 46%; margin-right: 170px; margin-top: -170px;">
-                        <!-- <button type = "submit" id = "li">
-                            تسجيل دخول 
-                        </button> -->
+                    <div class = "buttonF ">
+                    
+                        <button id ="si">انشاء حساب</button>
+                        <input type="submit" name="signnn" value="تسجيل دخول">
+                   </div>
                 </form>
             </div>
         </div>
@@ -156,8 +151,14 @@
 
         
         <script>
-            var registerB = document.getElementById("si");
+            var si = document.getElementById("si");
             var LoginB = document.getElementById("li");
+        
+            
+            si.onclick = function()
+            {
+                location.href = "Signup.php";
+            };
         
             LoginB.onclick = function (event) 
             {
@@ -173,11 +174,6 @@
                         window.location.href = "../index.php";
                     }
                 }
-            };
-        
-            registerB.onclick = function()
-            {
-                location.href = "Signup.php";
             };
         
             function required(inputId) {
