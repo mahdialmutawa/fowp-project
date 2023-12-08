@@ -16,10 +16,9 @@
             </h1>
 
             <div id="merch-prod-container">
-                
+                <?php include('./php/get_prod.php');?>
             </div>
         </div>
         <?php include("footer.php");?>
-        <?php include("./php/Catres.php");?>
     </body>
 </html>
