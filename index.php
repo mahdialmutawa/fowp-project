@@ -32,6 +32,8 @@
             <a href="./pages/catigoryResults.php?category=electric" target="_self"><div class="white-circle"><img src="./assets/sections/elec-parts.png" alt="offers-section"> <h4>القطع الكهربائية</h4></div></a>
         </div>
 
+        <!-- if session active dislay prev + execute query to get orders -->
+
         <?php include('footer.php');?>
         <script src="./scripts/land_script.js"></script>
     </body>
