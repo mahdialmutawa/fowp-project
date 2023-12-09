@@ -1,0 +1,196 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Share&display=swap');
+*{
+    font-family: 'Share', sans-serif;
+}
+
+div.Legainaha_signature
+{
+    display: inline-flex;
+    margin: 0px auto;
+    font-size: 25pt;
+    color: #307095;
+
+}
+.Legainaha_signature a, a:visited, a:active,a:link, a:hover
+{
+    margin: 12px 0px 12px 10px;
+    text-decoration: none;
+    color: #307095;
+}
+div.search_section
+{
+    display: inline-flex;
+    margin: 10px 0px 10px 50px;
+}
+
+
+.navigation_links ul
+{
+    display: inline-flex;
+    list-style-type: none;
+    padding: 5px 0px 0px 10px;
+}
+
+
+header
+{
+    display: inline-flex;
+    position: sticky;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.121);
+    max-height: max-content;
+    min-width:max-content;
+    width: 100%;
+}
+
+.vertical {
+  border: 3px solid #204f6a5a;
+  height: 30px;
+  margin: 6px;
+  border-radius: 10px;
+  width: 100%
+}
+
+
+.titles
+{
+    color: #307095;
+
+}
+.container 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.Req-box
+{
+    background-color: #ffffff;
+    width: 25%;
+    height: 50vh;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 21px auto;
+
+}
+
+body 
+{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.container1 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 400px;
+    width: 100%;
+  }
+  .container1 .steps {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  .steps .circle 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    color: #999;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 50%;
+    background: #fff;
+    border: 4px solid #e0e0e0;
+    transition: all 200ms ease;
+    transition-delay: 0s;
+  }
+  .steps .circle.active 
+  {
+    transition-delay: 100ms;
+    border-color: #307095;
+    color: #307095;
+  }
+  .steps .progress-bar 
+  {
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+  }
+  .progress-bar .indicator 
+  {
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #307095;
+    transition: all 300ms ease;
+  }
+
+
+footer
+{
+    background-color: #E6E6EF ;
+    width: 100%;
+    border: #C9C9C9 2px solid;
+    direction: rtl;
+    max-height: max-content;
+    min-width:max-content;
+    display: flex;
+}
+div.legainaha_info
+{
+    margin: 80px 50px;
+    font-size: large;
+}
+div.legainaha_info img
+{
+    margin: 0px 0px 0px 30px;
+}
+div.contact
+{
+    font-size: large;
+    margin: 80px 50px;
+}
+div#tel
+{
+    display: inline-flex
+}
+div#email
+{
+    display: inline-flex;
+}
+
+div.related_topics
+{
+    margin: 80px 300px;
+}
+div.related_topics ul
+{
+    list-style-type: none;
+    display:inline-block;
+}
+div.related_topics p
+{
+    font-size: large;
+    margin: 20px 40px;
+}
+div.social_media
+{
+    margin: 20px 40px;
+}
