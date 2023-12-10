@@ -20,6 +20,7 @@
             $product->av = $row['availability'];
             
             if(isset($best_merch[$product->merchant_id]))continue;
+
             if($product->av == "Available"){
                 echo "<a href=\"./productPage.php?pid=$product->pnum&mid=$product->merchant_id&category=$category\" target=\"_self\">";
                 echo "<div id=\"merch-pcard\">";

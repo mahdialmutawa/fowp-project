@@ -17,14 +17,16 @@
      <?php include("header.php");?>
         
      <!--End of header section-->
-
+        <?php
+        $email = $_GET['email'];
+        ?>
         <!--Start of body section-->
         <div class="container">
             <div class="forgot-password-box">
                 <h2 id="Title">تغيير كلمة المرور</h2>
-                <form>
+                <form method= "post" action = "./php/change-pass.php?email=<?php echo $email;?>">
                     <div class="NewPass" id="NP">
-                        <input type="password" id="pass1" placeholder="كلمة المرور الجديدة" required>
+                        <input type="password" id="pass1" name="pass1" placeholder="كلمة المرور الجديدة" required>
                         <input type="password" id="pass2" placeholder="تأكيد كلمة المرور" required>
                     </div>
                     

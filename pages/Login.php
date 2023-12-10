@@ -45,7 +45,7 @@
                         </div> 
 
                         <div class="forgot-password">
-                            <a href="ForgotPassword.php" id = "ForgotPass" style="text-decoration: none;">
+                            <a href="forgot-pass.php" id = "ForgotPass" style="text-decoration: none;">
                                 <div >
                                     نسيت كلمة المرور؟
                                 </div>
