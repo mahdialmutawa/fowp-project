@@ -12,10 +12,11 @@
 
         <div id="main-content">
             <h1 id="main-title"><?php echo $_GET['category'];?></h1>
-            <?php
-                include("./php/best_seller_title.php");
-            ?>
+           
             <div id="merch-prod-container">
+                <?php
+                    include("./php/best_seller_title.php");
+                ?>
                 <?php include('./php/get_prod.php'); $best_merch = $merchants;?>
             </div>
         </div>
