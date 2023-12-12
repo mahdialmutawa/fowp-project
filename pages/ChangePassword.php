@@ -2,7 +2,7 @@
 
 <html lang="ar" dir="rtl">
     <head>
-        <link rel="stylesheet" href="../styles/ForgotpassStyle.css">
+        <link rel="stylesheet" href="../styles/forgot-pass.css">
         <link rel="stylesheet" href="../styles/land_style.css">
 
         <title>

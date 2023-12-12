@@ -96,7 +96,7 @@
                 {
                     alert("Please enter your email address.");
                 }
-                 else if (!pnum)
+                 else if (!pnum && !isNaN(pnum))
                 {
                     alert("Please enter your phone number.");
                 }

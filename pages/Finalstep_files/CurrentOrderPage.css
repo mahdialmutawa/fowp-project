@@ -287,8 +287,6 @@ div#MerchantDetails
 {
     display: inline-flex;
     visibility: hidden;
-    margin: 0 auto;
-    
 }
 #MerchantComment
 {
@@ -303,7 +301,6 @@ div#MerchantDetails
     background: #FBFBFB;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
     font-size: 16pt;
-    
 }
 #ProductComment
 {
@@ -332,8 +329,6 @@ div#MerchantDetails
 #SendRating
 {
     visibility: hidden;
-    margin: 0 auto;
-
 }
 #submitButton img 
 {

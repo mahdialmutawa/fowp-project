@@ -6,7 +6,7 @@
     <a href="index.php">Legainaha</a>
 </div>
 <div class="search_section">
-    <input type="text" size="49" placeholder="ماهي القطعة التي تبحث عنها؟" style="font-size: 14pt; text-align: right; padding: 0px 12px 0px 0px;">
+    <!-- <input type="text" size="49" placeholder="ماهي القطعة التي تبحث عنها؟" style="font-size: 14pt; text-align: right; padding: 0px 12px 0px 0px;"> -->
 </div>
 <nav>
     <div class="navigation_links">

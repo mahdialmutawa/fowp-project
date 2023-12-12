@@ -21,6 +21,7 @@
             <img src="../assets/images/SuccessfullyPayment.png" id="innerimg">
             <br>
             <a href="" id="link">عرض الفاتورة الرقمية</a>
+            
             <br>
             <br>
         </div>
