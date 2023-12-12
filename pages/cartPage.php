@@ -4,7 +4,7 @@
 <head>
 
     <link rel="stylesheet" href="../styles/cart-item.css">
-    <link rel="stylesheet" href="../styles/legainahaStyle.css">
+    <link rel="stylesheet" href="../styles/LegainahaStyle.css">
     <link rel="stylesheet" href="../styles/land_style.css">
 
     <title>Legainaha - السلة</title>
@@ -73,7 +73,7 @@
                     
                     else
                      {
-                        echo '<div class="cartNoItems">';
+                        echo '<div class="cartNoItems" style=" margin-top: 200px;">';
                         echo '<img class="cartExclamationMark" src="../assets/images/ExclamMark.png" alt="Exclamation Mark">';
                         echo '<p class="cartNoItemsText">السلة فارغة</p>';
                         echo '</div>';

@@ -116,10 +116,10 @@
                         setTimeout(() => {
                             window.location.href = './CurrentOrderPage.php';
                         }, 2000);
-                    }, 2000);
+                    }, 3400);
                 }, 2000);
                 
-            }, 2000);
+            }, 3000);
         }
         
         updateStatus();

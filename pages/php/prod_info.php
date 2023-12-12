@@ -8,7 +8,6 @@
     .'where merchant_id = merchant.id AND merchant.id = '.$mid
     .' AND pnum = '. $pid
     .' AND category = \''.$category.'\';';
-
     $prods = $conn->query($query);
 
     $products = array();
@@ -36,6 +35,7 @@
             echo "<br>
             الكمية: ".$product->quant;
             echo "</div>";
+            $max = $product->quant;
         }
     } else{
         echo "<h1 style=\"color: red;margin:0 40%;\">".' Error! </h1>';

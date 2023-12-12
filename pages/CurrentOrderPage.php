@@ -129,14 +129,14 @@
             </div>
         </div>
     </section>
-    <div id="ConfirmationRectangle">
+    <div id="ConfirmationRectangle" style="margin-right: 150%;">
         <div id="CloseCircle">
-            <a href="../pages/CurrentOrderPage.php">
+            <a href="../index.php">
                 <img src="../assets/images/close.svg">
             </a>
         </div>
         <p id="RatingMessage" >تم ارسال التقييم</p>
-        <img src="../assets/images/Submitted.svg" style = "margin: 0 24%;">
+        <img src="../assets/images/Submitted.svg" >
     </div>
 
     <?php include('footer.php');?>

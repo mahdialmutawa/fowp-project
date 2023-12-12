@@ -21,7 +21,7 @@ Legainaha
        <form action="<?php echo "./php/cart.php"; ?>" method="GET">
         <input type="hidden" name="pid" value="<?php echo $pid;?>">
         <input type="hidden" name="mid" value="<?php echo $mid;?>">
-        <input type="number" placeholder="الكميه" id="text" min="1" value="1" name="text">
+        <input type="number" placeholder="الكميه" id="text" min="1" max="<?php echo $max; ?>" value="1" name="text">
        <button type="submit" id="but" name="but" value="ok">إضافه للسلة</button>
     </form>
 
