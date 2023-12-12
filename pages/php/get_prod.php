@@ -2,7 +2,7 @@
 /// @Dev-K0
     include("db_conn.php");
     $category = $_GET['category'];
-    $query = 'select category, pname, price, img, merchant_id,pnum, availability '
+    $query = 'select category, pname, price, img, merchant_id,pnum, availability, quantity '
             .'from product, merchant '
             .'where merchant_id = merchant.id ' 
             .'AND category = \''.$category.'\';';
@@ -18,10 +18,11 @@
             $product->merchant_id = $row['merchant_id'];
             $product->pnum = $row['pnum'];
             $product->av = $row['availability'];
+            $product->q = $row['quantity'];
             
             if(isset($best_merch[$product->merchant_id]))continue;
 
-            if($product->av == "Available"){
+            if($product->av == "Available" && $product->q > 0){
                 echo "<a href=\"./productPage.php?pid=$product->pnum&mid=$product->merchant_id&category=$category\" target=\"_self\">";
                 echo "<div id=\"merch-pcard\">";
                     echo "<div id=\"p-img\">"; echo "<img src=\"".$product->img."\">"; echo "</div>";

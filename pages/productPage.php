@@ -13,10 +13,16 @@ Legainaha
     <body>
     <?php include('header.php');?>
     <div id="main">
+        <?php
+            $pid = $_GET['pid'];
+            $mid = $_GET['mid'];
+        ?>
       <?php include('./php/prod_info.php')?>
-       <form>
-        <input type="number" placeholder="الكميه" id="text" min="0" value="0">
-       <button type="text" id="but">إضافه للسلة</button>
+       <form action="<?php echo "./php/cart.php"; ?>" method="GET">
+        <input type="hidden" name="pid" value="<?php echo $pid;?>">
+        <input type="hidden" name="mid" value="<?php echo $mid;?>">
+        <input type="number" placeholder="الكميه" id="text" min="1" value="1" name="text">
+       <button type="submit" id="but" name="but" value="ok">إضافه للسلة</button>
     </form>
 
 </div>

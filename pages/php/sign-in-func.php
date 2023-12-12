@@ -16,13 +16,15 @@ function isUsernameExist($username)
     }
 }
 
-function isPasswordMatch($Password, $fname) {
-    global $conn;
-    $sql = "SELECT username FROM Customer WHERE Password  = '". $Password ."' AND username = '" .$fname."';";
+function getHashedPassword($username) {
+    global $conn; 
+
+    $sql = "SELECT password FROM customer WHERE username = '$username'";
     $result = $conn->query($sql);
 
-    if ($result && $result->num_rows > 0) {
-        return true;
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        return $row['password'];
     } else {
         return false;
     }
